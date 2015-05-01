@@ -1,21 +1,21 @@
 #!/bin/bash
 
 # more repositories (see https://fedoraproject.org/wiki/EPEL)
-yum install -y epel-release
+sudo yum install -y epel-release
 
 # should already be there
-yum install -y lua python
+sudo yum install -y lua python
 
 # required for EasyBuild
-yum install -y python gcc-c++ patch
+sudo yum install -y python gcc-c++ patch
 
 # required for Lmod
-yum install -y lua lua-posix lua-filesystem tcl
+sudo yum install -y lua lua-posix lua-filesystem tcl
 # optional for Lmod
-yum install -y lua-json lua-term
+sudo yum install -y lua-json lua-term
 
 # so we can build OFED-enabled toolchains
-yum install -y libibverbs-devel
+sudo yum install -y libibverbs-devel
 
 # useful tools
-yum install -y wget man vim emacs git
+sudo yum install -y wget man vim emacs git
