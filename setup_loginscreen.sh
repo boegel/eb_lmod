@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo (cat >> /etc/issue) << EOF
+(cat >> /etc/issue) << EOF
 
 Welcome to the EasyBuild/Lmod sandbox environment.
 Use 'eb_lmod' as user login.
