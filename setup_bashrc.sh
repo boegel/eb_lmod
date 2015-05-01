@@ -6,8 +6,8 @@ alias ls="/bin/ls"
 # include location of Lmod binaries in \$PATH
 export PATH=\$HOME/lmod/lmod/libexec:\$PATH
 
-# set up \$MODULEPATH
-module use \$HOME/modules/all
+# set up \$MODULEPATH (can't use 'module use' yet)
+export MODULEPATH=\$HOME/modules/all
 
 # set up Lmod
 source \$HOME/lmod/lmod/init/bash
