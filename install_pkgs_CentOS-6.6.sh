@@ -17,5 +17,8 @@ sudo yum install -y lua-json lua-term
 # so we can build OFED-enabled toolchains
 sudo yum install -y libibverbs-devel
 
+# OpenSSL OS dep
+sudo yum install -y openssl-devel
+
 # useful tools
 sudo yum install -y wget man vim emacs git
