@@ -7,7 +7,7 @@ sudo yum install -y epel-release
 sudo yum install -y lua python
 
 # required for EasyBuild
-sudo yum install -y python gcc-c++ patch
+sudo yum install -y python gcc-c++ patch unzip
 
 # required for Lmod
 sudo yum install -y lua lua-posix lua-filesystem tcl
