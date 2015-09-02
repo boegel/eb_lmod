@@ -45,6 +45,7 @@ Scripts to set up EasyBuild + Lmod environment for hands-on tutorial sessions.
 7. Configure & install OS packages
 
   ```shell
+  $ sudo yum -y install git
   $ git clone https://github.com/boegel/eb_lmod
   $ cd eb_lmod
   $ sudo ./setup_loginscreen.sh
