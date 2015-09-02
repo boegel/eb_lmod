@@ -40,7 +40,7 @@ Scripts to set up EasyBuild + Lmod environment for hands-on tutorial sessions.
   # eb_lmod ALL=(ALL) ALL
   ```
 
-6. Reboot & login in with `eb_lmod` account
+6. Log out & login in with `eb_lmod` account
 
 7. Configure & install OS packages
 
