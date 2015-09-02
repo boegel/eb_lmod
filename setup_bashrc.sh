@@ -9,8 +9,17 @@ export PATH=`ls -d \$HOME/env-mods/Modules/*/bin`:\$HOME/lmod/lmod/libexec:\$PAT
 # set up \$MODULEPATH (can't use 'module use' yet)
 export MODULEPATH=\$HOME/modules/all
 
+# set up environment modules
+if [ -f \$HOME/env-mods/Modules/*/init/bash ]
+then
+    source \$HOME/env-mods/Modules/*/init/bash
+fi
+
 # set up Lmod
-source \$HOME/lmod/lmod/init/bash
+if [ -f \$HOME/lmod/lmod/init/bash ]
+then
+    source \$HOME/lmod/lmod/init/bash
+fi
 
 ## configure EasyBuild
 
