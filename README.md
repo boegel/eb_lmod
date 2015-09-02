@@ -52,29 +52,44 @@ Scripts to set up EasyBuild + Lmod environment for hands-on tutorial sessions.
   $ sudo ./install_pkgs_CentOS-6.6.sh
   ```
 
-8. Install & configure EasyBuild/Lmod
+8. Install modules tool
+
+Pick a modules tool (installing both is fine, Lmod will preferred):
+
+  * environment modules
+
+    ```shell
+    $ ./install_environment-modules.sh
+    ```
+
+  * Lmod
+
+    ```shell
+    $ ./install_Lmod.sh
+    ```
+
+9. Install & configure EasyBuild
 
 note: no `sudo` required anymore!
 
   ```shell
-  $ ./install_Lmod.sh
   $ ./install_EasyBuild.sh
   $ ./setup_bashrc.sh; source ~/.bashrc
   $ ./setup_vimrc.sh
   ```
 
-9. Build and install `foss/2015a` toolchain
+10. Build and install `foss/2015a` toolchain
 
   ```shell
   $ eb foss-2015a.eb -dr
   ```
 
-10. Install applications using `foss/2015a`
+11. Install applications using `foss/2015a`
 
 ```shell
   $ eb WRF-3.6.1-foss-2015a-dmpar.eb -dr
   ```
 
-11. Set up Lmod spider cache
+12. Set up Lmod spider cache
 
 # TODO
