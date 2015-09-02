@@ -9,6 +9,8 @@ sudo yum install -y lua python
 # required for EasyBuild
 sudo yum install -y python gcc-c++ patch unzip
 
+# required for environment modules
+sudo yum install -y tcl-devel
 # required for Lmod
 sudo yum install -y lua lua-posix lua-filesystem tcl
 # optional for Lmod
