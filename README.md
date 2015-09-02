@@ -54,6 +54,8 @@ Scripts to set up EasyBuild + Lmod environment for hands-on tutorial sessions.
 
 8. Install & configure EasyBuild/Lmod
 
+note: no `sudo` required anymore!
+
   ```shell
   $ ./install_Lmod.sh
   $ ./install_EasyBuild.sh
