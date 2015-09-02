@@ -28,7 +28,7 @@ export EASYBUILD_PREFIX=\$HOME
 
 # use Lmod as modules tool (if available)
 which lmod &> /dev/null
-if [ $? -eq 0 ]
+if [ \$? -eq 0 ]
 then
     export EASYBUILD_MODULES_TOOL=Lmod
 fi
